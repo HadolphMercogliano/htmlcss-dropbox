@@ -6,13 +6,16 @@
 }
 
 /* colonne (container width /3 * 2) */
-.big-col {}
+.col-big {}
 
-.small-col {}
+.scol-small {}
 
 /* HEADER */
+.header-side {}
 
 /* MAIN */
 .logos {}
+
+.small-sponsor {}
 
 /* FOOTER */
