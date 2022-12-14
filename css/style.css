@@ -1,12 +1,18 @@
-/* Variables */
-:root {
-    --primary: red;
+/* Generics */
+.btn {
+    background-color: var(--btncolor);
+    color: white;
+    text-align: center;
 }
 
-/* Generics */
+/* colonne (container width /3 * 2) */
+.big-col {}
+
+.small-col {}
 
 /* HEADER */
 
 /* MAIN */
+.logos {}
 
 /* FOOTER */
