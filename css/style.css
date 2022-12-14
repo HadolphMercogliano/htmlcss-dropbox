@@ -5,13 +5,35 @@
     text-align: center;
 }
 
+ul {
+    list-style: none;
+
+}
+
 /* colonne (container width /3 * 2) */
 .col-big {}
 
-.scol-small {}
+.col-small {}
 
 /* HEADER */
-.header-side {}
+.header-side {
+    height: 4rem;
+    line-height: 4rem;
+}
+
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+header * {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
 
 /* MAIN */
 .logos {}
