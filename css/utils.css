@@ -10,8 +10,16 @@
 	--red: #ff1c1c;
 	--blue: #0d2481;
 	--yellow: #ffd830;
-	--border: 1px solid #f5f5f5;
+	--border: 1px solid #c0c0c0;
 	--paddings: 2px 10px;
+}
+
+.brown {
+	color: var(--brown);
+}
+
+.white-bg {
+	background-color: white;
 }
 
 /* Utils */
