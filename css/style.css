@@ -1,13 +1,20 @@
 /* Generics */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .btn {
+    display: inline-block;
     background-color: var(--btncolor);
     color: white;
     text-align: center;
     padding: 5px 10px;
+    text-decoration: none;
+    font-size: 0.8rem;
 }
 
 .btn a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: white;
 }
 
@@ -19,7 +26,7 @@ ul {
 .col-big {
     width: calc(100% / 3 * 2);
     /* debug */
-    background-color: bisque;
+    /* background-color: bisque; */
     height: 350px;
 }
 
@@ -31,17 +38,27 @@ ul {
     text-align: left;
 }
 
+.white-bg {
+    background-color: white;
+}
+
 /* HEADER */
 header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 4rem;
+    min-height: 4rem;
+    padding: 0 10px;
     background-color: white;
 }
 
 .header-side {
     line-height: 4rem;
+}
+
+.header-side ul li {
+    padding: 0 5px;
+    color: black;
 }
 
 
@@ -50,10 +67,8 @@ header {
 .header-side a,
 .header-side img {
     display: inline;
-    padding: 0 5px;
     vertical-align: middle;
     text-decoration: none;
-    color: black;
 }
 
 /* MAIN */
@@ -63,8 +78,22 @@ main {
 
 .jumbotron {
     padding-top: 40px;
-    background-color: var(--acquaj);
     margin-bottom: 6rem;
+}
+
+.jumbotron .col-big {
+    height: 350px;
+}
+
+.scroll-down {
+    display: inline-block;
+    margin-top: auto;
+    font-size: 2rem;
+}
+
+.jumbotron .col-small {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 h1 {
@@ -79,19 +108,62 @@ h1 {
     margin: 1rem;
     border: var(--border);
     /* debug */
-    height: 600px;
+    /* height: 600px; */
 }
 
+/* piani tariffari */
 .col-head {
     text-align: center;
     border-bottom: var(--border);
     padding: 10px 0;
 }
 
-.col-content {}
+.col-content {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.col-content span>a {
+    color: blue;
+}
+
+.col-content>* {
+    margin: .8rem;
+}
+
+hr {
+    margin: 2rem 0;
+    width: 20%;
+}
 
 .col-single {
     border: var(--border);
+}
+
+.mese {
+    color: grey;
+}
+
+.circle {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    border: var(--border);
+    margin: 0 5px;
+}
+
+.selected-circle {
+    border: 5px solid var(--lightblue);
+}
+
+.circle.unselected-circle {
+    margin-left: 40px;
+}
+
+
+/* PARTNERS */
+#partner {
+    max-width: 80%;
 }
 
 .btn-out {
@@ -101,40 +173,41 @@ h1 {
 /* cards section  */
 .row .col-mini {
     border: 0;
+    flex-direction: column;
 }
 
 /* SPONSOR SECTION  */
 .logos>section {
     width: calc(100% / 3);
-    aspect-ratio: 1;
+    height: calc(100vw / 3);
     flex-wrap: wrap;
 }
 
 .big-sponsor {
     /* debug */
+    padding: 2.5rem;
     background-color: var(--lightgrey);
     /* aspect-ratio: 1; */
+    overflow: auto;
 }
 
 .big-sponsor img {
-    padding: 2rem;
-    max-width: 60%;
+    max-width: 50%;
 }
 
 .small-sponsor {
+    width: calc(100% / 2);
     height: calc(100% / 2);
-    aspect-ratio: 1;
     /* debug */
-    padding: 20px;
-    line-height: 100%;
-    background-color: red;
+    /* padding: 3rem; */
+    /* fill: white; */
+    align-items: center;
+    justify-content: center;
 }
 
-.small-sponsor img {
-    object-fit: contain;
-    text-align: center;
-    vertical-align: middle;
-
+.small-sponsor svg {
+    scale: .5;
+    fill: white;
 }
 
 .logo1 {
@@ -170,11 +243,38 @@ h1 {
     background-color: var(--yellow);
 }
 
+/* DROPBOX BUSINESS TRY */
+.try.d-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbo-bgc {
+    background-color: var(--acquaj);
+}
+
+h2 {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    /* padding: 0px 7rem; */
+}
+
+.btn.white-bg {
+    color: black;
+
+}
+
 
 .faq {
     font-weight: bold;
     padding: 3rem 0;
     border-bottom: var(--border);
+}
+
+.faq>span:last-of-type {
+    display: block;
+    text-align: right;
 }
 
 .hidden-par {
@@ -202,7 +302,7 @@ footer {
 }
 
 
-ul li:first-child {
+footer ul li:first-child {
     font-weight: bold;
     padding-bottom: 1rem;
 }
