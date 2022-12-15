@@ -8,7 +8,7 @@ body {
     background-color: var(--btncolor);
     color: white;
     text-align: center;
-    padding: 5px 10px;
+    padding: 8px 12px;
     text-decoration: none;
     font-size: 0.8rem;
 }
@@ -27,15 +27,14 @@ ul {
     width: calc(100% / 3 * 2);
     /* debug */
     /* background-color: bisque; */
-    height: 350px;
+    /* height: 350px; */
 }
 
 .col-small {
     width: calc(100% / 3);
     /* debug */
     /* background-color: whitesmoke; */
-    height: 350px;
-    text-align: left;
+    /* height: 350px; */
 }
 
 .white-bg {
@@ -100,12 +99,13 @@ h1 {
     /* text-align: justify; */
     font-size: 5rem;
     padding-right: 3rem;
+    margin-bottom: 2rem;
 
 }
 
 .col-mini {
     width: 30%;
-    margin: 1rem;
+    margin: 1rem 0;
     border: var(--border);
     /* debug */
     /* height: 600px; */
@@ -136,8 +136,32 @@ hr {
     width: 20%;
 }
 
-.col-single {
-    border: var(--border);
+::before {
+    margin-right: 5px;
+    display: inline-block;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.user::before {
+    content: "\f007";
+}
+
+.folder::before {
+    content: "\f07b";
+}
+
+.share::before {
+    content: "\f1e0";
+}
+
+.team::before {
+    content: "\f0c0";
+}
+
+.check::before {
+    content: "\f00c";
+    color: var(--lightblue);
 }
 
 .mese {
@@ -160,21 +184,57 @@ hr {
     margin-left: 40px;
 }
 
-
-/* PARTNERS */
-#partner {
-    max-width: 80%;
+/* TEAM - COLONNA SINGOLA */
+.col-single {
+    border: var(--border);
+    margin-top: 2rem;
+    margin-bottom: 10rem;
 }
 
+.col-single>.col-content {
+    flex-direction: row;
+}
+
+.col-single .col-small {
+    text-align: center;
+}
+
+.col-single .col-big>* {
+    margin: 1rem 0;
+}
+
+
+/* PARTNERS */
+img.partner {
+    max-width: 90%;
+}
+
+.partner h3 {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
 .btn-out {
+    display: inline-block;
     border: var(--border);
+    margin: 2rem 0;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 /* cards section  */
+.row {
+    column-gap: 3rem;
+}
+
 .row .col-mini {
     border: 0;
     flex-direction: column;
 }
+
 
 /* SPONSOR SECTION  */
 .logos>section {
