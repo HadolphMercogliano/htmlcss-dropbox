@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link font  -->
+    <link rel=“preconnect” href=“https://fonts.googleapis.com”>
+    <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin>
+    <link
+        href=“https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap”
+        rel=“stylesheet”>
     <!-- LINK CSS  -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/utils.css">
@@ -82,7 +88,7 @@
             </div>
 
             <!-- 3 col piani tariffari -->
-            <section class="d-flex">
+            <section class="d-flex tariffe">
                 <!-- singolo  -->
                 <div class="col-mini">
                     <div class="col-head">
@@ -159,7 +165,7 @@
                         <span><i class="fa-solid fa-building"></i> Azienda</span>
                     </div>
                     <div class="col-content d-flex">
-                        <h4>Enterprice</h4>
+                        <h4>Enterprise</h4>
                         <span><b>Contattaci</b></span>
                         <span class="mese">-</span>
                         <span class="user d-flex"> 10 o più utenti</span>
@@ -183,7 +189,7 @@
                             Servizio assistenza 24/h
                         </span>
                         <span class="check d-flex">
-                            Possibilitàdi personalizzazione totale
+                            Possibilità di personalizzazione totale
                         </span>
                     </div>
                 </div>
@@ -198,7 +204,7 @@
                     </div>
                     <div class="col-content d-flex">
                         <div class="col-big">
-                            <h3>Enterprice</h3>
+                            <h3>Enterprise</h3>
                             <span><b>Contatta l'ufficio vendite per i prezzi </b></span><br><br>
                             <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella
                                 gestione su qualsiasi scala.</p>
@@ -288,7 +294,7 @@
             <section class="d-flex ">
                 <div class="col-big try ">
                     <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
-                    <a href="#">Scopri di più sui nostri clienti</a>
+                    <a href="#" class="scopri">Scopri di più sui nostri clienti</a>
                 </div>
                 <div class="col-small"></div>
             </section>
@@ -376,9 +382,10 @@
             <section class="big-sponsor">
                 <div>
                     <img src="./img/designit.svg" alt="">
+                    <hr>
                     <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte
                         soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox
-                        Paper".</p>
+                        Paper".</p><br><br>
                     <p>Morten Thomsen, Global IT Lead</p>
                 </div>
 
@@ -511,7 +518,7 @@
         <div>
             <div class="jumbo-bgc">
                 <div class="container-small try ">
-                    <!-- prova gratuita -->
+                    <!-- DROPBOX BUSINESS TRY -->
                     <section class="d-flex">
                         <div class="col-big try d-flex">
                             <h2 class="brown">Porta Dropbox Business nella tua azienda.</h2>
@@ -529,7 +536,7 @@
 
                     <div class="faq">
                         <span> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                        <span>freccetta</span>
+                        <span class="rotate"><i class="fa-solid fa-angle-down"></i></span>
 
                         <p class="hidden-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit
                             distinctio delectus eos sint ut molestias eveniet temporibus voluptate, illo consectetur
@@ -538,7 +545,7 @@
 
                     <div class="faq">
                         <span> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                        <span> freccetta</span>
+                        <span class="rotate"><i class="fa-solid fa-angle-down"></i></span>
 
                         <p class="hidden-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit
                             distinctio delectus eos sint ut molestias eveniet temporibus voluptate, illo consectetur
@@ -547,7 +554,7 @@
 
                     <div class="faq">
                         <span> Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                        <span> freccetta</span>
+                        <span class="rotate"><i class="fa-solid fa-angle-down"></i></span>
 
                         <p class="hidden-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit
                             distinctio delectus eos sint ut molestias eveniet temporibus voluptate, illo consectetur
@@ -613,8 +620,8 @@
                         <li><a href="#">Funzioni</a></li>
                     </ul>
                 </div>
-
             </section>
+            <hr>
             <!-- lingua -->
             <section class="lenguage">
                 <span><i class="fa-solid fa-earth-americas"></i> Italiano <i class="fa-solid fa-caret-up"></i></span>

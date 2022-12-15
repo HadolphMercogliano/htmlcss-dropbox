@@ -1,6 +1,6 @@
 /* Generics */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .btn {
@@ -45,6 +45,7 @@ ul {
 header {
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
     width: 100%;
     min-height: 4rem;
     padding: 0 10px;
@@ -75,8 +76,16 @@ main {
     padding-top: 4rem;
 }
 
+h1 {
+    /* text-align: justify; */
+    font-size: 4rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
 .jumbotron {
-    padding-top: 40px;
+    padding-top: 4rem;
     margin-bottom: 6rem;
 }
 
@@ -95,12 +104,15 @@ main {
     align-items: flex-start;
 }
 
-h1 {
-    /* text-align: justify; */
-    font-size: 5rem;
-    padding-right: 3rem;
-    margin-bottom: 2rem;
+h2 {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    /* padding: 0px 7rem; */
+}
 
+.tariffe {
+    justify-content: space-between;
 }
 
 .col-mini {
@@ -109,6 +121,7 @@ h1 {
     border: var(--border);
     /* debug */
     /* height: 600px; */
+    ;
 }
 
 /* piani tariffari */
@@ -128,7 +141,7 @@ h1 {
 }
 
 .col-content>* {
-    margin: .8rem;
+    margin: .8rem .5rem;
 }
 
 hr {
@@ -235,6 +248,13 @@ img.partner {
     flex-direction: column;
 }
 
+.scopri {
+    display: block;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+    color: blue;
+}
+
 
 /* SPONSOR SECTION  */
 .logos>section {
@@ -313,28 +333,21 @@ img.partner {
     background-color: var(--acquaj);
 }
 
-h2 {
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    /* padding: 0px 7rem; */
-}
-
 .btn.white-bg {
     color: black;
-
 }
 
+.col-big>h2 {
+    margin: 6rem 0;
+}
 
+/* DOMANDE FREQUENTI */
 .faq {
     font-weight: bold;
     padding: 3rem 0;
     border-bottom: var(--border);
-}
-
-.faq>span:last-of-type {
-    display: block;
-    text-align: right;
+    border-top: var(--border);
+    position: relative;
 }
 
 .hidden-par {
@@ -345,7 +358,18 @@ h2 {
 
 .faq:hover .hidden-par {
     display: block;
+}
 
+.rotate {
+    text-align: end;
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 50px;
+}
+
+.faq:hover .rotate {
+    transform: rotateX(180deg);
 }
 
 /* FOOTER */
@@ -365,6 +389,10 @@ footer {
 footer ul li:first-child {
     font-weight: bold;
     padding-bottom: 1rem;
+}
+
+footer hr {
+    width: 8%;
 }
 
 
