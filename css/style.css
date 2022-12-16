@@ -61,12 +61,18 @@ header {
 }
 
 .header-side ul li {
-    padding: 0 5px;
+    padding: 0 10px;
     line-height: 4rem;
-    color: black;
     border-bottom: 3px solid transparent;
 }
 
+#logo {
+    padding-right: 1rem;
+}
+
+.header-side li>a {
+    color: black;
+}
 
 .header-side ul,
 .header-side li,
@@ -90,8 +96,7 @@ h1 {
 }
 
 .jumbotron {
-    padding-top: 4rem;
-    margin-bottom: 6rem;
+    padding-top: 3rem;
 }
 
 .jumbotron .col-big {
@@ -101,28 +106,26 @@ h1 {
 .scroll-down {
     display: inline-block;
     margin-top: auto;
-    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
     color: black;
     scroll-behavior: smooth;
 }
-
-.scroll-down:active {}
 
 .jumbotron .col-small {
     flex-direction: column;
     align-items: flex-start;
 }
 
-#first-section {
-    padding-top: 1px;
-    /* senza padding h1 va sotto l'header */
+#first-section>div:first-of-type {
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
 }
 
 h2 {
-    margin-top: 8rem;
-    margin-bottom: 3rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
     font-size: 2rem;
-    /* padding: 0px 7rem; */
 }
 
 .tariffe {
@@ -133,8 +136,6 @@ h2 {
     width: 30%;
     margin: 1rem 0;
     border: var(--border);
-    /* debug */
-    /* height: 600px; */
 }
 
 /* piani tariffari */
@@ -149,12 +150,20 @@ h2 {
     padding: 1rem;
 }
 
+h4 {
+    font-size: 1.4rem;
+}
+
 .col-content span>a {
     color: blue;
 }
 
 .col-content>* {
     margin: .8rem .5rem;
+}
+
+.col-content span {
+    font-size: 0.9rem;
 }
 
 hr {
@@ -237,6 +246,7 @@ img.partner {
 .partner h3 {
     line-height: 1.5rem;
     margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 .btn-out {
@@ -261,6 +271,11 @@ img.partner {
 .row .col-mini {
     border: 0;
     flex-direction: column;
+    font-size: .9rem;
+}
+
+.row .col-mini h3 {
+    margin-bottom: 1rem;
 }
 
 .scopri {
@@ -278,10 +293,8 @@ img.partner {
 }
 
 .big-sponsor {
-    /* debug */
     padding: 2.5rem;
     background-color: var(--lightgrey);
-    /* aspect-ratio: 1; */
     overflow: auto;
 }
 
@@ -292,9 +305,6 @@ img.partner {
 .small-sponsor {
     width: calc(100% / 2);
     height: calc(100% / 2);
-    /* debug */
-    /* padding: 3rem; */
-    /* fill: white; */
     align-items: center;
     justify-content: center;
 }
@@ -355,6 +365,10 @@ img.partner {
     margin: 6rem 0;
 }
 
+.col-small.try .btn {
+    padding: 8px 35px;
+}
+
 /* DOMANDE FREQUENTI */
 .faq {
     font-weight: bold;
@@ -362,6 +376,7 @@ img.partner {
     border-bottom: var(--border);
     border-top: var(--border);
     position: relative;
+    font-size: .9rem;
 }
 
 .hidden-par {
@@ -411,6 +426,7 @@ footer hr {
 .col-footer a {
     text-decoration: none;
     color: white;
+    font-size: 0.8rem;
 }
 
 .lenguage {
